@@ -30,7 +30,7 @@ down-v:
 	docker-compose down -v
 
 build:
-	docker-compose build
+	docker-compose docker/docker-compose.yml build
 
 logs:
 	docker logs -f api
