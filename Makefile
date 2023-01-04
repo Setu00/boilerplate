@@ -21,10 +21,10 @@ migrate-down:
 	$(COMPOSE_EXEC) api npm run migrate:down
 
 up:
-	docker-compose up
+	docker-compose -f docker/docker-compose.yml up
 
 down:
-	docker-compose down
+	docker-compose -f docker/docker-compose.yml down
 
 down-v:
 	docker-compose down -v
