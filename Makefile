@@ -30,7 +30,7 @@ down-v:
 	docker-compose down -v
 
 build:
-	docker-compose -f docker/docker-compose.yml build
+	docker build . --tag quay.io/cloudhut/kowl:latest
 
 logs:
 	docker logs -f api
