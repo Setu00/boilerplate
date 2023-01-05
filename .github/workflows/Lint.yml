@@ -3,7 +3,7 @@ name: Linting
 on: [push]
 
 jobs:
-  Lint Check:
+  lint:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
