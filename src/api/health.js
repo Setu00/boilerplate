@@ -11,7 +11,7 @@ export const getHealth = async (req, res, next) => {
 			name: pkgConfig.APP_NAME,
 			version: pkgConfig.APP_VERSION,
 			timestamp: new Date().toISOString()
-		});
+ 		});
 	} catch (error) {
 		next(error);
 	}

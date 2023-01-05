@@ -27,7 +27,8 @@
 		"seed:up": "npm run db up:seed",
 		"seed:down": "npm run db down:seed",
 		"seed:create": "npm run db create:seed",
-		"test": "jest"
+		"test": "jest --watch --coverage --coverageReporters=text-summary",
+		"ci:test": "jest --coverage --coverageReporters=text-summary"
 	},
 	"dependencies": {
 		"@vrbo/pino-rotating-file": "^3.0.0",
